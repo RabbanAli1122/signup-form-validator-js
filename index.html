@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="box">
@@ -18,39 +20,41 @@
             </header>
 
 
-            <main class ="signup-body">
+            <main class="signup-body">
                 <form action="#">
 
                     <p>
                         <label for="name">Full Name</label>
-                        <input class="input" type="text" id="name" placeholder="Type your name here." pattern="*/^[A-Za-z]*\s{1}[A-Za-z]*$/" required>
-                        <i class="fa-solid"></i>
+                        <input type="text" id="name" placeholder="Type your name here." pattern="*/^[A-Za-z]*\s{1}[A-Za-z]*$/" required>
+                        <i class="fa-solid mark" style=" --right:1px;"></i>
                         <span id="nameError"></span>
                     </p>
 
                     <p>
                         <label for="email">Email</label>
-                        <input class="input" type="email" id="email" placeholder="xyz@gmail.com" required>
-                        <i class="fa-solid"></i>     
-                        <span id="emailError"></span>               
+                        <input type="email" id="email" placeholder="xyz@gmail.com" required>
+                        <i class="fa-solid mark" style=" --right:1px;"></i>
+                        <span id="emailError"></span>
                     </p>
 
                     <p>
                         <label for="password">Password</label>
-                        <input class="input" type="password" id="password" required placeholder="At least 8 characters." min="8" max="30">
-                        <i class="fa-solid"></i>
-                        <span id="passError"></span>                    
+                        <input class="input" type="password" id="password" placeholder="At least 8 characters." min="8" max="30">
+                        <i class="fa-solid fa-eye toggle-password eye" style=" --right: 30px;" toggle="#password"></i>
+                        <i class="fa-solid mark" style=" --right: 1px;"></i>
+                        <span id="passError"></span>
                     </p>
 
                     <p>
                         <label for="confirmPassword">Confirm password</label>
-                        <input class="input" type="password" id="confirmPassword" required placeholder="Add Password again." min="8" max="30">
-                        <i class="fa-solid"></i>
-                        <span id="confirmPassError"></span>                    
+                        <input class="input" type="password" id="confirmPassword" placeholder="Add Password again." min="8" max="30">
+                        <i class="eye fa-solid fa-eye toggle-password" style=" --right: 30px;" toggle="#confirmPassword"></i>
+                        <i class="fa-solid mark" style="--top:40px; --right: 1px;"></i>
+                        <span id="confirmPassError"></span>
                     </p>
 
                     <p>
-                        <input type="submit" value="Create Accound" id="submitBtn" >
+                        <input type="submit" value="Create Accound" id="submitBtn">
                     </p>
 
                 </form>

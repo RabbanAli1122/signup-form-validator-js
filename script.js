@@ -30,9 +30,19 @@ submitBtn.addEventListener("click", (e)=>{
         }
     
     });
-cross.addEventListener("click",(e)=>{
-    e.previousElementSibling.value=""
-})
+document.querySelectorAll(".toggle-password").forEach((eyeIcon) => {
+    eyeIcon.addEventListener("click", function () {
+        const input = document.querySelector(this.getAttribute("toggle"));
+        if (input.getAttribute("type") === "password") {
+            input.setAttribute("type", "text");
+        } else {
+            input.setAttribute("type", "password");
+        }      
+        this.classList.toggle("fa-eye");
+        this.classList.toggle("fa-eye-slash");
+    });
+});
+
 function validateName(){
     let name =document.getElementById("name").value;
     
@@ -90,11 +100,16 @@ function validatePassword(){
 function validateConfirmPassword(){
     let confirmPass=document.getElementById("confirmPassword").value
     let pass =document.getElementById("password").value;
-    if (!(confirmPass==pass)){
-        confirmPassError.previousElementSibling.classList.add("fa-xmark");
-        confirmPassError.innerHTML="Passwords don't match!"
+    if(confirmPass.length==0){
+        confirmPassError.innerHTML="Enter Password to confirm!"
         return false;
     }
+    if (!(confirmPass==pass)){
+        confirmPassError.previousElementSibling.classList.add("fa-xmark");
+        confirmPassError.innerHTML="Passwords don't match! Try again."
+        return false;
+    }
+
     confirmPassError.previousElementSibling.classList.add("fa-check");
     return true
 

@@ -52,10 +52,13 @@
     margin-left: 10px;
     position: relative; 
 }
-.signup-body p i{
+
+
+.eye,
+.mark{
     position: absolute ;
     top: 27px;
-    right: 1px;
+    right: var(--right);
     color:#fbae3c;
     font-size: 20px; 
     background-color: #001220;
@@ -69,11 +72,13 @@
 }
 .signup-body p input[type="text"],
 .signup-body p input[type="email"],
-.signup-body p input[type="password"]{
+.signup-body p input[type="password"],
+.input{
     padding: 7px 30px 7px 7px;
 
 }
-.signup-body p input{
+.signup-body p input,
+.input{
     width: 100%;
     font-size: 20px;
     background: transparent;
@@ -85,11 +90,14 @@
     text-overflow: ellipsis;       /* Add ... at the end */
 
 }
-.signup-body p input{
+
+.signup-body p input,
+.input{
         transition: transform 0.2s ease;
 
 }
-.signup-body p input:hover{
+.signup-body p input:hover,
+.input:hover{
     box-shadow: 0px 0px 10px #69583e;
     transform: scale(1.05);
 
@@ -143,3 +151,18 @@ input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
     transition: background-color 9999s ease-in-out 0s;
 }
+.password-wrapper {
+    position: relative;
+}
+/* 
+.password-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fbae3c;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+} */
+
