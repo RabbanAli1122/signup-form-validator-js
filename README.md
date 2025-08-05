@@ -1,6 +1,7 @@
 # 🧾 Form Validator
 
-[![Live Demo](https://rabbanali1122.github.io/signup-form-validator-js/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo–rabbanali1122.github.io-blue)](https://rabbanali1122.github.io/signup-form-validator-js/)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 A sleek and interactive sign-up form that validates user input for name, email, password, and password confirmation in real-time using JavaScript. The UI is styled with modern CSS and supports responsive behavior. Helpful icons and error messages guide users to input correct details, and password visibility toggling is also included.
@@ -89,15 +90,6 @@ The password fields include an eye icon (👁️) toggle that allows users to vi
 ## 🙏 Acknowledgements
 
 Thanks to open-source tutorials and developer communities for their help and inspiration in building the validation logic and UI components.
-
-## 📁 Project Structure
-
-form-validator/
-│
-├── index.html
-├── style.css
-├── script.js
-└── background.png
 
 
 ## 🚀 How to Run
