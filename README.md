@@ -41,7 +41,7 @@ A sleek and interactive sign-up form that validates user input for name, email, 
 
 ## 📺 Live Demo
 
-👉 [Live GitHub Pages Demo]([https://rabbanali1122.github.io/Signup-Form-Validator/](https://rabbanali1122.github.io/signup-form-validator-js/))
+👉 [Live GitHub Pages Demo](https://rabbanali1122.github.io/signup-form-validator-js/)
 
 ## 🛠️ Technologies Used
 
